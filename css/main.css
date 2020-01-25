@@ -1,0 +1,142 @@
+.head-section {
+    height: 1000px;
+    background-color: #123456;
+    width:100%;
+}
+
+.container-fluid {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+body {
+    height: 2000px;
+    background-color:#123456;
+}
+
+.double-text{
+    font-size: 20pt;
+    text-align:center;
+}
+
+.triple-text {
+    font-size:18pt;
+    text-align:center;
+}
+
+
+.single {
+    height: 600px;
+    background-color: #123456;
+    padding: 0 !important;
+}
+
+.row {
+    margin: 0 !important;
+}
+
+.card {
+    display:block;
+    background-color: #123456;
+    border:none;
+    color:#ffa000;
+    text-align:center;
+    margin: 0 auto;
+    width: 400px;
+    margin-top: 100px;
+    transition:0.7s;
+}
+
+.card-invisible {
+    display:block;
+    background-color: #123456;
+    border:none;
+    color:#ffa000;
+    text-align:center;
+    margin: 0 auto;
+    width: 400px;
+    visibility:hidden;
+    height:0;
+    opacity:0;
+    transition:0.7s;
+
+}
+
+.game-canvas {
+    display:none;
+
+}
+
+.game-canvas-on {
+    display:block;
+}
+
+.title {
+    font-size: 42pt;
+    font-family: 'Raleway', sans-serif;
+}
+
+#logo {
+    transition: 0.50s;
+    -webkit-transition: 0.50s;
+    -moz-transition: 0.50s;
+    -o-transition: 0.50s;
+
+}
+#logo:hover {
+    -webkit-transition: 0.50s;
+    -moz-transition: 0.50s;
+    -o-transition: 0.50s;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    cursor:none;
+}
+
+.double {
+    height: 400px;
+    display: flex;
+    justify-content: center; /* align horizontal *!*/
+    align-items: center; /* align vertical *!*/
+}
+
+.double-title {
+    color: #ffa000;
+}
+
+.double-1 {
+    background-color: #123456;
+
+}
+
+.double-2 {
+    background-color: #123456;
+    color:whitesmoke;
+}
+
+.triple {
+    height: 600px;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+
+.triple-1 {
+    background-color: yellow;
+}
+
+.triple-2 {
+    background-color: #123456;
+}
+
+.triple-3 {
+    background-color: red;
+}
+
+.slide-title {
+    color: whitesmoke;
+    padding-bottom: 20px;
+}
+
