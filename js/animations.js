@@ -55,9 +55,15 @@ function playGame() {
     var change = 1;
     var r = 1;
 
+    var mouseX = 0;
+    var mouseY = 0;
+
     var pointArr = [];
     canvas.addEventListener('mousemove', function(evt) {
         var mousePos = getMousePos(canvas, evt);
+        mouseX = mousePos.x;
+        mouseY = mousePos.y;
+    });
 
         function draw() {
 
@@ -69,12 +75,12 @@ function playGame() {
             //ctx.globalAlpha = (Math.cos(r * FREQUENCY + OFFSET) + 1)/2;
             ctx.beginPath();
             //ctx.arc(x, y, Math.cos(r * FREQUENCY + OFFSET) * MAX_SIZE + MAX_SIZE, 0, 2 * Math.PI);
-            var pos = getMousePos(canvas, evt);
+            //var pos = getMousePos(canvas, evt);
 
             ctx.fillStyle = "#ffa000";
             //ctx.fillRect (pos.x, pos.y, 4, 4);
 
-             ctx.arc(pos.x, pos.y, 5, 0, 2 * Math.PI, true);
+             ctx.arc(mouseX, mouseY, 5, 0, 2 * Math.PI, true);
             // ctx.globalAlpha = 0.5;
 
             ctx.stroke();
@@ -84,7 +90,7 @@ function playGame() {
         }
 
     window.requestAnimationFrame(draw);
-    });
+
 
 }
 
